@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fa">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="assets/css/bootstrap.css">
+      <link rel="stylesheet" href="assets/css/themify.css">
+      <link rel="stylesheet" href="assets/css/common.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <title>روبی</title>
+   </head>
+   <body>
+
+
+
+
+
+<!-- شروع هدر -->
+  <header>
+    <div class="container">
+      <div class="float-right" id="navbarNavDropdown">
+        <nav class="navbar navbar-expand-lg">
+           <div id="navbarNavDropdown">
+             <ul class="navbar-nav">
+               <li class="nav-item active">
+                 <a href=""><img src="assets/image/logo.svg" alt=""></a>
+               </li>
+               <li class="nav-item">
+                 <a href="" class="blue">سفارش ها</a>
+               </li>
+               <li class="nav-item">
+                 <a href="" class="blue">مشریان</a>
+               </li>
+               <li class="nav-item">
+                 <a href="" class="blue">سرویس یاران</a>
+               </li>
+               <li class="nav-item">
+                 <a href="" class="blue">مالی</a>
+               </li>
+               <li class="nav-item">
+                 <a href="" class="blue">پنل پیامک</a>
+               </li>
+             </ul>
+           </div>
+         </nav>
+      </div>
+      <div class="float-left">
+        <ul>
+          <li><a class="green" href="">ثبت سفارش جدید</a></li>
+          <li><a class="green" href="">ساخت حساب</a></li>
+          <li><a class="red" href="">خروج</a></li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </header>
+<!-- پایان هدر -->
+
+
+
+
+
+
+<!-- شروع جداول -->
+
+<section class="tables">
+  <div class="container">
+      <div class="float-right title">
+        <h6><b>سفارش ها</b></h6>
+      </div>
+      <div class="float-left d-flex filters">
+          <div class="inline pl-2">
+            <input class="form-control" type="text" placeholder="جستجو" name="" value="">
+          </div>
+          <div class="inline pl-2">
+            <select class="form-control" name="">
+              <option value="">فیلتر : همه سفارش ها</option>
+              <option value="">adfa</option>
+              <option value="">adfa</option>
+            </select>
+          </div>
+          <div class="inline">
+            <select class="form-control" name="">
+              <option value="">ترتیب: تاریخ ثبت سفارش</option>
+              <option value="">adfa</option>
+              <option value="">adfa</option>
+            </select>
+          </div>
+      </div>
+      <div class="clearfix"></div>
+
+    <div class="data">
+      <table class="table">
+    <thead style="background: #122459;color:#fff;padding:8px 0">
+      <tr>
+        <th>کد سفارش</th>
+        <th>نام مشتری</th>
+        <th>نوع سرویس</th>
+        <th>مبلغ</th>
+        <th>زمان انجام</th>
+        <th>مکان سرویس</th>
+        <th>نام سرویس یار</th>
+        <th>وضعیت</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td><span><img src="assets/image/greenCircle.svg" alt=""></span> <span>1234-321</span></td>
+          <td>فرهاد شیرین</td>
+          <td>رفت و روب خانه</td>
+          <td>۴۰۰۰۰ تومان</td>
+          <td><span> 9:18 </span>  <span> 97-11-5 </span> </td>
+          <td>تهران</td>
+          <td><span class="show">گیسو حریری</span> <span class="none"><a href="">انتخاب سرویس یار</a></span></td>
+          <td><span class="green show">در جریان</span> <span class="none"><a href="">فاکتور</a></span></td>
+      </tr>
+      <tr>
+        <td><span><img src="assets/image/blueCircle.svg" alt=""></span>  <span>1234-321</span></td>
+        <td>فرهاد شیرین</td>
+        <td>رفت و روب خانه</td>
+        <td>۴۰۰۰۰ تومان</td>
+        <td><span> 9:18 </span>  <span> 97-11-5 </span> </td>
+        <td>تهران</td>
+        <td>-</td>
+        <td><span class="blue show">در انتظار سرویس یار</span> <span class="none none-red"><a href="">غیرفعال کردن</a></span></td>
+      </tr>
+      <tr>
+        <td><span>1234-321</span></td>
+        <td>فرهاد شیرین</td>
+        <td>رفت و روب خانه</td>
+        <td>۴۰۰۰۰ تومان</td>
+        <td><span> 9:18 </span>  <span> 97-11-5 </span> </td>
+        <td>تهران</td>
+        <td>گیسو حریری</td>
+        <td><span class="show red">لغو شده</span> <span class="none none-green"><a href="">فعال کردن</a></span></td>
+      </tr>
+      <tr style="opacity: 0.5;">
+        <td><span>1234-321</span></td>
+        <td>فرهاد شیرین</td>
+        <td>رفت و روب خانه</td>
+        <td>۴۰۰۰۰ تومان</td>
+        <td><span> 9:18 </span>  <span> 97-11-5 </span> </td>
+        <td>تهران</td>
+        <td>گیسو حریری</td>
+        <td><span>پایان یافته</span></td>
+      </tr>
+    </tbody>
+
+  </table>
+  <div class="footer">
+    <div class="float-right">
+      <p>
+        نمایش
+        <span>1</span>
+        تا
+        <span>20</span>
+        از
+        <span>2203</span>
+      </p>
+    </div>
+    <div class="float-left paginates">
+      <ul>
+        <li><a href="" class="active">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">..</a></li>
+        <li><a href="">16</a></li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+    </div>
+
+
+  </div>
+</section>
+
+
+<!-- پایان جداول -->
+
+
+
+
+
+
+      <script src="assets/js/jquery.js"></script>
+      <script src="assets/js/bootstrap.js"></script>
+   </body>
+</html>

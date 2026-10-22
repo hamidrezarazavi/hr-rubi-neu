@@ -1,0 +1,301 @@
+
+/*************************************************************************************/
+
+/* Start Header Section */
+
+section.header{
+  position: relative;
+  height: 900px;
+  /* background: url('../image/headerBg.svg'); */
+  background: linear-gradient(#160d31 0%, #1F1F4D 100%);
+  padding-top: 3%;
+  width: 100%
+}
+section.header .logo{
+  margin-bottom: 60px
+}
+section.header .float-left img{
+  height: 80%
+}
+section.header p{
+  color: #FFFFFF;
+  text-align: justify;
+  opacity: 0.8;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.16);
+  font-size: 14px;
+  padding: 16px 0
+}
+section.header img.headerBottom{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  bottom: -1px;
+}
+section.header .content{
+  position: absolute;
+  position: absolute;
+  top: 20%;
+}
+section.header .headerForm{
+  position: relative;
+}
+section.header .headerForm input{
+  width: 100%;
+  font-size: 0.85rem;
+  color: #ced4da;
+  padding: 24px 0.75rem;
+  margin: 15px 0;
+  border: none;
+  outline: none
+
+}
+section.header .headerForm button{
+  position: absolute;
+  left: -1px;
+  top: 0;
+  padding: 0.72rem 39px;
+  /* background: linear-gradient(9.7deg, #FF7E73 100%, #FFD2A6 0%); */
+  background: url('../image/orangeButton.svg');
+  border-radius: 4px 0px 0px 4px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: bolder;
+}
+section.header .headerForm span{
+  opacity: 0.6;
+  color: #fff
+}
+
+section.header img.card{
+  position: absolute;
+margin: 0 auto;
+left: 0%;
+width: 100%;
+background: transparent;
+}
+#my{
+  height: 580px
+}
+section.services a.float-right{
+  color: #3F3A59;
+}
+section.services a.float-right:hover{
+      color: #FF968C;
+}
+/* End Header Section */
+
+/*************************************************************************************/
+
+
+
+
+
+/*************************************************************************************/
+
+/* Start Services Section */
+
+section.services{
+  background: #F7F8FA;
+  position: relative;
+}
+section.services .title, section.customers .title{
+  display: block;
+  margin: 0 auto;
+  color: #8A8F99;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.32);
+  font-weight: bolder;
+  font-size: 18px;
+  margin-bottom: 50px
+}
+section.services .item{
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 24px;
+  width: 90%;
+  margin-bottom: 30px
+}
+section.services .item ul li:nth-child(1){
+  padding-bottom: 28px
+}
+section.services a:hover #none{
+  display: block;
+}
+section.services a:hover #show{
+  display: none
+}
+section.services a:hover .greenBg{
+  background: linear-gradient(210.19deg, #C2F2AA 0%, #39A9BF 100%);
+}
+section.services a:hover .ElephantBg{
+background: linear-gradient(206.05deg, #C3D1E6 0%, #666A80 100%);
+}
+section.services a:hover .PurpleBg{
+background: linear-gradient(206.05deg, #D499FF 0%, #504080 100%);
+}
+section.services a:hover .OrangeBg{
+background: linear-gradient(206.05deg, #FFEE99 0%, #F28379 100%);
+}
+section.services a:hover .BlueBg{
+background: linear-gradient(210.19deg, #99F7FF 0%, #3D3DCC 100%);
+}
+
+section.services .item ul li:nth-child(2){
+  color: #3F3A59;
+  font-size: 16px;
+  font-weight: bolder;
+  padding-bottom: 8px
+}
+section.services .item ul li:nth-child(3){
+  color: #565B66;
+  font-size: 13px
+}
+section.services img#leftSharp{
+  position: absolute;
+  width: 100%;
+  margin-top: 60px;
+}
+#feedback .modal-header{
+  background: linear-gradient(191.31deg, #C2F2AA 0%, #39A9BF 100%);
+  padding: 12px;
+  height: 130px;
+  color: #fff;
+}
+#feedback .modal-header ul{
+  display: block;
+  margin: 0 auto;
+}
+#feedback .modal-header ul li{
+  padding: 5px 0
+}
+#feedback .modal-header .modal-title{
+  margin: 0 auto;
+  font-size: 16px;
+}
+#feedback ul.tabs{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background: #F2F3F5;
+box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.06);
+border-radius: 80px;
+    width: 58%;
+}
+#feedback ul.tabs li{
+  display: inline-block;
+  padding: 5px 0px;
+
+}
+#feedback ul.tabs li a{
+  padding: 5px 20px;
+color: #3A404D;
+}
+#feedback ul.tabs a.active{
+  background: linear-gradient(194.77deg, #C2F2AA 0%, #39A9BF 100%);
+border-radius: 76px;
+}
+#feedback .close{
+  color: #fff;
+  position: absolute;
+}
+#feedback .modal-footer{
+  border: none
+}
+#login .modal-header, #login .modal-footer{
+  border: none
+}
+/* End Services Section */
+
+/*************************************************************************************/
+
+
+
+
+/*************************************************************************************/
+
+/* Start Features Section */
+
+section.featurs{
+  position: relative;
+  background: #fff;
+  margin-top: -250px;
+  height: 900px
+}
+section.featurs .title{
+  display: block;
+  margin: 0 auto;
+  color: #8A8F99;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.32);
+  font-weight: bolder;
+  font-size: 18px;
+  margin-bottom: 50px
+}
+section.featurs ul li{
+  display: inline-block;
+  padding: 0 4px;
+  color: #3F3A59;
+  font-size: 16px;
+  font-weight: bolder;
+}
+section.featurs p.text{
+  color: #565B66;
+    text-align: justify;
+    padding: 15px 94px 15px 0px;
+    font-size: 12px
+}
+section.featurs .appDownload{
+  position: relative;
+}
+ul.applink{
+  left: 34%;
+position: absolute;
+top: 45%;
+display: block;
+margin: 0 auto;
+}
+section.featurs img#rightSharp{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+/* End Features Section */
+
+/*************************************************************************************/
+
+
+
+
+
+/*************************************************************************************/
+
+/* Start Customer Section*/
+
+section.customers{
+  background: #F7F8FA;
+  position: relative;
+}
+
+/* End Customer Section */
+
+/*************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************************************************/
+
+/*  */
+
+/*  */
+
+/*************************************************************************************/

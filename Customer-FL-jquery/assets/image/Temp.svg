@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="592" height="48" viewBox="0 0 592 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="592" height="48" rx="6" fill="url(#paint0_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="592" y1="-1.20452e-06" x2="589.83" y2="67.0807" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF7E73"/>
+<stop offset="1" stop-color="#FFD2A6"/>
+</linearGradient>
+</defs>
+</svg>

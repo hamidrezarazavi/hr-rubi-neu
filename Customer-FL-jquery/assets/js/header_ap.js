@@ -1,0 +1,18 @@
+$(document).ready(function(){
+    /*page attribute variables*/
+    var pageURL = $(location).attr("href");
+    var filename = pageURL.substring(pageURL.lastIndexOf('/')+1);
+    
+    var site_name = "روبی آپ"
+    var page_names = {index:"index.html",my:"my.html"};
+    var page_titles = {index:"صفحه اصلی",my:"داشبورد"};
+    if(filename==page_names.index){
+         $("#header-area").append('<div class="container"><div class="float-right" id="navbarNavDropdown"><nav class="navbar navbar-expand-lg"><div id="navbarNavDropdown"><ul class="navbar-nav"><li class="nav-item active"><a href=""><img src="assets/image/logo.svg" alt=""></a></li><li class="nav-item"><a href="#main-menu-container"><span>خدمات</span></a></li><li class="nav-item"><a href=""><span>وبلاگ</span></a></li><li class="nav-item"><a href=""><span>ثبت نام سرویس یاران</span></a></li></ul></div></nav></div><div class="float-left"><ul>      <li><a  class="credit" href="#" data-toggle="modal" data-target="#login-1"><span><b>ورود</b></span> یا <span><b>عضویت</b></span></a></li></ul></div><div class="clearfix"></div></div><script src="assets/js/header.js"></script>');
+    }
+    else{
+        $("#header-area").append('<div class="container"><div class="float-right" id="navbarNavDropdown"><nav class="navbar navbar-expand-lg"><div id="nav   barNavDropdown"><ul class="navbar-nav"><li class="nav-item active"><a href="#"><img src="assets/image/logo.svg" alt=""></a></li><li class="nav-item"><a href="#main-menu-container"><img src="assets/image/square.svg" alt=""><span>خدمات</span></a></li><li class="nav-item"><a href="Dashboard/request.html"><img src="assets/image/orders.svg" alt=""><span>سفارش ها</span></a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/image/message.svg" alt=""><span>پیام ها</span></a><div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="navbarDropdownMenu"><div class="dropdown-item" href="#"><div class="content"><div class="title float-right"><span><img src="assets/image/circle.svg" alt=""></span><span>کمبود اعتبار</span></div><div class="float-left date"><p>الان</p></div><div class="clearfix"></div><div class="description"><p> سفارش رفت و روب شما در حال انجام است.</p></div></div><div class="clearfix"></div></div> <div class="dropdown-item" href="#"> <div class="content"><div class="title float-right"><span><img src="assets/image/circle.svg" alt=""></span><span>کمبود اعتبار</span></div><div class="float-left date"><p>الان</p></div><div class="clearfix"></div><div class="description"><p> سفارش رفت و روب شما در حال انجام است.</p></div> </div> <div class="clearfix"></div></div><div class="dropdown-item" href="#"><div class="content"><div class="title float-right"><span><img src="assets/image/circle.svg" alt=""></span><span>کمبود اعتبار</span></div><div class="float-left date"><p>الان</p> </div><div class="clearfix"></div><div class="description"><p>سفارش رفت و روب شما در حال انجام است.</p></div></div><div class="clearfix"></div></div> </div></li></ul> </div></nav></div><div class="float-left"><ul><li><a  class="credit" href="">اعتبار<span class="count">۲۰۰۰</span>تومان</a></li><li><a href=""><span>حساب کاربری</span> <img src="assets/image/setting.svg" alt=""></a></li><li><a id="log-out" style="cursor: pointer;" class="red"><span>خروج</span></a></li></ul></div><div class="clearfix"></div></div><script src="assets/js/header.js"></script>');
+        
+    }
+    
+   
+});

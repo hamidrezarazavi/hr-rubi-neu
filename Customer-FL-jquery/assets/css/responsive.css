@@ -1,0 +1,112 @@
+.support{
+  display: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .none{
+    display: none!important
+  }
+  section.header, section.featurs{
+    height: 550px
+  }
+  a.viewProfile{
+    padding: 10px 40px!important
+  }
+  section.featurs p.text{
+    padding: 15px 9px 15px 0px;
+  }
+  section.customers img{
+    width: 100%;
+  }
+  header nav.navbar ul li, header ul li{
+    padding: 0 5px;
+  }
+  section.services img#leftSharp{
+        margin-top: 115px;
+  }
+  section.services img{
+    width: 80%
+  }
+  section.featurs .d-flex{
+    display: block!important
+  }
+  footer .d-flex{
+    display: block!important
+  }
+  section.services .d-flex , #df{
+    display: block!important;
+  }
+  section.services .item{
+    width: 100%
+  }
+  #my{
+    height: 180px
+  }
+  #clean-service-details ul.tabs, #catring-service-details ul.tabs, #maintenance-service-details ul.tabs{
+        width: 84%;
+  }
+  #orderWizard ul.nav li:nth-child(2)::after{
+    width: 32px
+  }
+  #orderWizard ul.nav li:nth-child(2)::before{
+      width: 32px
+  }
+  #orderWizard .tab-content h4{
+    font-size: 16px
+  }
+  .request .item ul li{
+    font-size: 12px
+  }
+  .request .item{
+    width: 77%;
+  }
+  #ser-du-title{
+    padding-left:106px
+  }
+}
+@media only screen and (max-width: 375px) {
+.request .accept{
+  height: 100%
+}
+.request .content{
+      height: 156px;
+}
+#ser-du-title{
+  padding-left: 82px
+}
+#clean-service-details ul.tabs, #catring-service-details ul.tabs, #maintenance-service-details ul.tabs{
+  width: 88%;
+}
+}
+@media only screen and (max-width: 320px) {
+  #resize{
+    width: 230px
+  }
+  #maintenance-service-details ul.tabs li a{
+    padding: 5px 17px
+  }
+  section.services img#leftSharp{
+        margin-top: 121px;
+  }
+  section.services .item{
+    width: 134%;
+  }
+  section.customers img{
+    width: 200%;
+  }
+  .nav-link{
+    display: block;
+    padding: 0.5rem 0.1rem;
+    font-size: 13px;
+  }
+  #orderWizard ul.nav li:nth-child(2)::after,#orderWizard ul.nav li:nth-child(2)::before{
+    display: none;
+  }
+  #clean-service-details ul.tabs, #catring-service-details ul.tabs, #maintenance-service-details ul.tabs{
+        width: 101%;
+  }
+  section.services .item {
+    width: 100%;
+}
+
+}

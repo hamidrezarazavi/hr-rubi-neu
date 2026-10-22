@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/themify.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>روبی</title>
+</head>
+<body>
+
+
+
+
+
+  <!-- شروع هدر -->
+  <header>
+    <div class="container">
+      <div class="float-right" id="navbarNavDropdown">
+        <nav class="navbar navbar-expand-lg">
+          <div id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a href=""><img src="assets/image/logo.svg" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <b><a href="BOorders.html" class="blue">سفارش ها</a></b>
+              </li>
+              <li class="nav-item">
+                <b><a href="BOcustomers.html" class="blue">مشتریان</a></b>
+              </li>
+              <li class="nav-item">
+                <b><a href="BOAgents.html" class="blue">سرویس یاران</a></b>
+              </li>
+              <li class="nav-item">
+                <b><a href="BOfinantial.html" class="blue">مالی</a></b>
+              </li>
+              <li class="nav-item">
+                <b><a href="BOsendMessage.html" class="blue">پنل پیامک</a></b>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="float-left">
+        <ul>
+          <li><a class="green" href="">ثبت سفارش جدید</a></li>
+          <li><a class="green" href="" data-toggle="modal" data-target="#myModal">ساخت حساب</a></li>
+          <li><a id="log-out" class="red" href="">خروج</a></li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </header>
+  <!-- پایان هدر -->
+
+
+
+
+
+
+  <!-- شروع جداول -->
+
+  <section class="tables">
+    <div class="container">
+      <div class="float-right title">
+        <h6><b>سرویس یاران</b></h6>
+      </div>
+      <div class="float-left d-flex filters">
+        <div class="inline pl-2">
+          <input class="form-control" type="text" placeholder="جستجو" name="" value="">
+        </div>
+        <div class="inline pl-2">
+          <select class="form-control" name="">
+            <option value="">همه سرویس یاران</option>
+            <option value="">فعال</option>
+            <option value="">غیرفعال</option>
+          </select>
+        </div>
+        <div class="inline">
+          <select class="form-control" name="">
+            <option value="">تاریخ ثبت نام</option>
+            <option value="">تاریخ آخرین سرویس</option>
+            <option value="">رتبه</option>
+            <option value="">تعداد بازخورد</option>
+          </select>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="data">
+        <table class="table">
+          <thead style="background: #122459;color:#fff;padding:8px 0">
+            <tr>
+              <th>نام سرویس یار</th>
+              <th>شماره تلفن همراه</th>
+              <th>تاریخ آخرین سفارش</th>
+              <th>امتیاز</th>
+              <th>تعداد سفارش ها</th>
+              <th>وضعیت</th>
+            </tr>
+          </thead>
+          <tbody id="agent-details-area">
+            <tr id="agent-details-item" class="none">
+              <td><span id="agent-details-state-icon"><img src="assets/image/greenCircle.svg" alt=""></span> <span  id="agent-details-name">1234-321</span></td>
+              <td id="agent-details-phonenumber">فرهاد شیرین</td>
+              <td id="agent-last-service-date"><span> 9:18 </span>  <span> 97-11-5 </span></td>
+              <td id="agent-details-rate">★★★★☆</td>
+              <td id="agent-details-services-count"> 90</td>
+              <td><span id="agent-details-state-text" class="red show">غیرفعال</span> <span id="agent-details-state-btn" class="none none-green"><a href="">فعال کردن</a></span></td>
+            </tr>
+<!--
+            <tr>
+              <td><span><img src="assets/image/blueCircle.svg" alt=""></span>  <span>1234-321</span></td>
+              <td>فرهاد شیرین</td>
+              <td>رفت و روب خانه</td>
+              <td>۴۰۰۰۰ تومان</td>
+              <td><span> 9:18 </span>  <span> 97-11-5 </span> </td>
+              <td><span class="blue show">در انتظار مدرک</span> <span id="agent-details-state-btn" class="none none-green"><a href="">فعال کردن</a></span></td>
+            </tr>
+            <tr>
+              <td><span><img src="assets/image/redCircle.svg" alt=""></span>  <span>1234-321</span></td>
+              <td>فرهاد شیرین</td>
+              <td>رفت و روب خانه</td>
+              <td>۴۰۰۰۰ تومان</td>
+              <td><span> 9:18 </span>  <span> 97-11-5 </span> </td>
+              <td><span class="show green">فعال</span> <span class="none none-red"><a href="">غیرفعال کردن</a></span></td>
+            </tr>
+-->
+          </tbody>
+
+        </table>
+        <div class="footer">
+          <div class="float-right">
+            <p>
+              نمایش
+              <span id="first-item-num">1</span>
+              تا
+              <span id="last-item-num">20</span>
+            </p>
+          </div>
+          <div class="float-left paginates">
+            <ul id="page-nav-area">
+              <li id="first-page-btn" class="none page-go" style="cursor: pointer;"><a>1</a></li>
+              <li id="etc-page-btn1" class="none"><a >..</a></li>
+              <li id="prev-page-btn" class="none page-go" style="cursor: pointer;"><a>2</a></li>
+              <li id="current-page-btn" class="none page-go" style="cursor: pointer;"><a>3</a></li>
+              <li id="next-page-btn" class="none page-go" style="cursor: pointer;"><a>4</a></li>
+              <li id="etc-page-btn2" class="none"><a >..</a></li>
+              <li id="last-page-btn" class="none page-go" style="cursor: pointer;"><a>5</a></li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- پایان جداول -->
+
+
+
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">ساخت حساب</h4>
+        </div>
+        <div class="modal-body text-center">
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">برای مشتری</button>
+
+          <button type="button" class="btn btn-info " data-toggle="modal" data-target="#myModal3">برای سرویس یار</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="myModal2" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="font-size:14px"><b>ساخت حساب برای مشتری</b></h4>
+          <button type="button" class="close" data-dismiss="modal"><span>انصراف</span> &times; </button>
+        </div>
+        <div class="modal-body">
+          <br>
+          <div class="d-flex">
+            <div class="col-6">
+              <p>نام</p>
+              <input type="text" name="" value="" placeholder="نام" class="form-control">
+            </div>
+            <div class="col-6">
+              <p>نام خانوادگی</p>
+              <input type="text" name="" value="" placeholder="نام خانوادگی" class="form-control">
+            </div>
+          </div>
+          <br>
+          <div class="d-flex">
+            <div class="col-4">
+              <p>تلفن همراه</p>
+              <input type="text" name="" value="" placeholder="تلفن همراه" class="form-control">
+            </div>
+            <div class="col-4">
+              <p class="transparent">adsaf</p>
+              <button type="button" class="btn btn-info" name="button" style="background: #184FF2;border-radius:6px">فرستادن کد تایید</button>
+            </div>
+            <div class="col-4">
+              <p>کد تایید</p>
+              <input type="text" name="" value="" placeholder="کد تایید" class="form-control">
+            </div>
+          </div>
+          <br>
+          <div class="d-flex">
+            <div class="col-6">
+              <p>جنسیت</p>
+              <select class="form-control" name="">
+                <option value="">آقا</option>
+                <option value="">مرد</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class="d-flex">
+            <div class="col-12">
+              <p>آدرس</p>
+              <input type="text" name="" value="" placeholder="آدرس" class="form-control">
+            </div>
+          </div>
+          <br>
+          <button class="btn btn-success" style="background: #24B35F;border-radius: 6px;width:100%">ثبت</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="myModal3" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="font-size:14px"><b>ساخت حساب برای سرویس یار</b></h4>
+          <button type="button" class="close" data-dismiss="modal"><span>انصراف</span> &times; </button>
+        </div>
+        <div class="modal-body">
+          <br>
+          <div class="d-flex">
+            <div class="col-6">
+              <p>نام</p>
+              <input type="text" name="" value="" placeholder="نام" class="form-control">
+            </div>
+            <div class="col-6">
+              <p>نام خانوادگی</p>
+              <input type="text" name="" value="" placeholder="نام خانوادگی" class="form-control">
+            </div>
+          </div>
+          <br>
+          <div class="d-flex">
+            <div class="col-4">
+              <p>تلفن همراه</p>
+              <input type="text" name="" value="" placeholder="تلفن همراه" class="form-control">
+            </div>
+            <div class="col-4">
+              <p class="transparent">adsaf</p>
+              <button type="button" class="btn btn-info" name="button" style="background: #184FF2;border-radius:6px">فرستادن کد تایید</button>
+            </div>
+            <div class="col-4">
+              <p>کد تایید</p>
+              <input type="text" name="" value="" placeholder="کد تایید" class="form-control">
+            </div>
+          </div>
+          <br>
+          <div class="d-flex">
+            <div class="col-6">
+              <p>سن</p>
+              <input class="form-control" type="text" placeholder="سن" name="" value="">
+            </div>
+            <div class="col-6">
+              <p>جنسیت</p>
+              <select class="form-control" name="">
+                <option value="">آقا</option>
+                <option value="">مرد</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class="d-flex">
+            <div class="col-12">
+              <p>آدرس</p>
+              <input type="text" name="" value="" placeholder="آدرس" class="form-control">
+            </div>
+          </div>
+          <br>
+          <div class="cont">
+            <p>تخصص ها</p>
+            <br>
+          </div>
+          <div class="clearfix"></div>
+
+          <div class="expert" style="padding:0 20px">
+            <div class="d-flex">
+
+              <div class="col-6">
+                <div class="custom-control custom-checkbox mb-3">
+        <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1">
+        <label class="custom-control-label" for="customCheck1">آشپزی</label>
+      </div>
+              </div>
+              <div class="col-6">
+                <div class="custom-control custom-checkbox mb-3">
+        <input type="checkbox" class="custom-control-input" id="customCheck2" name="example2">
+        <label class="custom-control-label" for="customCheck2">نظافت</label>
+      </div>
+              </div>
+
+            </div>
+            <div class="d-flex">
+
+              <div class="col-6">
+                <div class="custom-control custom-checkbox mb-3">
+        <input type="checkbox" class="custom-control-input" id="customCheck3" name="example3">
+        <label class="custom-control-label" for="customCheck3">تاسیسات</label>
+      </div>
+              </div>
+
+            </div>
+          </div>
+
+          <br>
+          <button class="btn btn-success" style="background: #24B35F;border-radius: 6px;width:100%">ثبت</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/agents.js"></script>
+</body>
+</html>
